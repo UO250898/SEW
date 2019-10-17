@@ -1,0 +1,30 @@
+body {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #083d5c;
+      background-color: #fceac8;
+  }
+h1,h2,h3,h4,h5,h6{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(27, 12, 233);
+}
+h1,h3,h5 {
+      font-style: italic;       
+  }
+h1{
+  background-color: #f3b94c;
+  font-size: 3em;
+  text-transform: uppercase;
+  padding: 20px 15px;
+  text-align: center; 
+  margin-right: 400px;
+  margin-left: 400px;
+  }
+h2{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    }
+p::first-letter { text-transform: uppercase }
+
