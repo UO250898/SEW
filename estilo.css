@@ -1,16 +1,16 @@
-body {
+body { /* a=0 b=0 c=1 -> Especificidad = 001 */
       font-family: "Times New Roman", Times, serif;
       font-size: 16px;
       line-height: 1.8;
       color: #083d5c;
       background-color: #fceac8;
   }
-h1,h2,h3{
+h1,h2,h3{ /* a=0 b=0 c=1 -> Especificidad = 001 */
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: rgb(27, 12, 233);
 }
-h1{
+h1{ /* a=0 b=0 c=1 -> Especificidad = 001 */
   font-style: italic;  
   border-radius: 6px;
   letter-spacing: 3px;
@@ -22,14 +22,15 @@ h1{
   margin-right: 400px;
   margin-left: 400px;
   }
-h2{
+h2{ /* a=0 b=0 c=1 -> Especificidad = 001 */
     font-size: 1.5em;
     text-transform: uppercase;
     text-align: center; 
     }
-p::first-letter { text-transform: uppercase }
+p::first-letter { /* a=0 b=0 c=2 -> Especificidad = 002 */
+   text-transform: uppercase }
 
-nav.barra {
+nav.barra { /* a=0 b=1 c=1 -> Especificidad = 011 */
   overflow: hidden;
   margin-right: 20px;
   margin-left: 20px;
@@ -38,16 +39,17 @@ nav.barra {
 
 /* Style the links inside the navigation bar */
 
-a  {
+a  { /* a=0 b=0 c=1 -> Especificidad = 001 */
   text-decoration:underline;
   color: #313131;
 }
 
-a:visited { text-decoration:underline overline;
+a:visited { /* a=0 b=0 c=2 -> Especificidad = 002 */ 
+  text-decoration:underline overline;
   color: #000000;
 }
 
-a.barra {
+a.barra { /* a=0 b=1 c=1 -> Especificidad = 011 */
   display:inline-block;
   color:#083d5c;
   border:1px solid #083d5c;
@@ -56,27 +58,26 @@ a.barra {
   text-decoration: none;
 }
 
-table {
-  text-align: center; 
+table { /* a=0 b=0 c=1 -> Especificidad = 001 */
   border-collapse: collapse;
 }
 
-table, th, td {
+table, th, td { /* a=0 b=0 c=1 -> Especificidad = 001 */
   text-align: center; 
   border: 1px solid #083d5c;
 }
 
-th {
+th { /* a=0 b=0 c=1 -> Especificidad = 001 */
   background-color: #083d5c;
   color: #fceac8;
 }
 
-ul {
+ul { /* a=0 b=0 c=1 -> Especificidad = 001 */
   list-style-type: square;
   margin: 0;
 }
 
-section.imagenes{
+section.imagenes{ /* a=0 b=0 c=2 -> Especificidad = 002 */
   display:flex;
   flex-direction:row;
   justify-content:center;
@@ -84,13 +85,13 @@ section.imagenes{
   padding:16px;
 }
 
-img{
+img{ /* a=0 b=0 c=1 -> Especificidad = 001 */
   width:425px;
   height:200px;
   margin-right:16px;
 }
 
-video {
+video { /* a=0 b=0 c=1 -> Especificidad = 001 */
   width: 50%;
   height: auto;
 }
