@@ -1,13 +1,103 @@
 body {
-      font: 400 15px Tahoma, sans-serif;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 16px;
       line-height: 1.8;
-      color:rgb(0, 0, 0);  
-      background-color: #f6f6f6;
+      color: #083d5c;
+      background-color: #fceac8;
   }
-h1 {
-      background-color:rgb(0, 0, 0); 
-      color: #fff;
-      text-transform: uppercase;
-      padding: 100px 25px;
-      text-align: center;     
+h1,h2,h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(27, 12, 233);
+}
+h1{
+  font-style: italic;  
+  border-radius: 6px;
+  letter-spacing: 3px;
+  background-color: #f3b94c;
+  font-size: 3em;
+  text-transform: uppercase;
+  padding: 20px 15px;
+  text-align: center; 
+  margin-right: 400px;
+  margin-left: 400px;
   }
+h2{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center; 
+    }
+p::first-letter { text-transform: uppercase }
+
+nav.barra {
+  overflow: hidden;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center; 
+}
+
+/* Style the links inside the navigation bar */
+
+a  {
+  text-decoration:underline;
+  color: #313131;
+}
+
+a:visited { text-decoration:underline overline;
+  color: #000000;
+}
+
+a.barra {
+  display:inline-block;
+  color:#083d5c;
+  border:1px solid #083d5c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+table {
+  text-align: center; 
+  border-collapse: collapse;
+}
+
+table, th, td {
+  text-align: center; 
+  border: 1px solid #083d5c;
+}
+
+th {
+  background-color: #083d5c;
+  color: #fceac8;
+}
+
+ul {
+  list-style-type: square;
+  margin: 0;
+}
+
+section.imagenes{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-content:center;
+  padding:16px;
+}
+
+img{
+  width:425px;
+  height:200px;
+  margin-right:16px;
+}
+
+video {
+  width: 50%;
+  height: auto;
+}
+/*img:nth-child(3n){
+  margin-right:0;
+  width:calc(33.33%-calc(32px/3));
+}/*
+
+
